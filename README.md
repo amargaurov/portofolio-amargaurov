@@ -1,1 +1,1 @@
-Project ini dibuat menggunakan bantuan Google Gemini
+Project ini dibuat menggunakan Google Gemini
