@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Amar Gaurov</title>
+    <style>
+        :root {
+            --primary: #2c3e50; 
+            --secondary: #3498db; 
+            --bg: #eef2f7; 
+        }
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--bg);
+            color: #333;
+        }
+
+        
+        nav {
+            background-color: var(--primary);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: flex-end;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 6px 12px;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--secondary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        
+        header {
+            background-color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 12px; 
+            margin-top: 25px; 
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        header img {
+            border-radius: 50%;
+            border: 5px solid var(--primary);
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 35px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h1 { font-size: 24px; color: var(--primary); margin: 10px 0; }
+        h2 { border-bottom: 2px solid var(--primary); padding-bottom: 10px; color: var(--primary); margin-bottom: 20px; }
+        h3 { color: var(--secondary); margin-top: 20px; }
+
+        
+        .list-style {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        .list-style li {
+            margin-bottom: 10px;
+        }
+
+        .img-grid { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
+        .img-grid img { width: 100%; max-width: 300px; border-radius: 8px; border: 1px solid #ddd; }
+
+        .cert-item { margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+        .cert-item:last-child { border-bottom: none; }
+        
+        .cert-preview { 
+            width: 100%; 
+            max-width: 320px; 
+            display: block; 
+            margin: 20px 0; 
+            border: 1px solid #ccc; 
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .btn-pdf { 
+            background: var(--primary); 
+            color: white; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-size: 13px; 
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn-pdf:hover { background: var(--secondary); }
+
+        footer { text-align: center; padding: 40px; color: #888; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#goals">Goals</a>
+    </nav>
+
+    <div class="container">
+
+        <header id="home">
+            <img src="assets/images/foto-profil.jpg" alt="Foto Amar Gaurov">
+            <h1>Aspiring Web Developer & Designer, Network Infrastructure Enthusiast, Tech Writer</h1>
+            <p>Seorang mahasiswa IT yang memulai perjalanan dari dunia infrastruktur jaringan hingga beralih ke perangkat lunak dan perancangan website. Saya yakin dengan kombinasi keahlian tersebut, saya mampu membangun sistem digital yang lebih baik, efisien, dan saling terhubung.</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Ketertarikan saya pada dunia teknologi dimulai sejak bangku SMK, tepat saat pertama kali saya mencoba memahami bagaimana komputer bisa saling berkomunikasi dengan komputer lain melalui jaringan. Pemahaman ini dibuktikan secara nyata saat saya menjalani Praktek Kerja Lapangan (PKL) di PT Carano Integrasi Teknologi.</p>
+            <p>Di sana, saya tidak hanya belajar secara teori, tetapi terjun langsung ke lapangan. Mulai dari instalasi kabel LAN, monitoring jaringan, hingga mengkonfigurasi EoIP Tunnel pada MikroTik. Memasuki dunia perkuliahan, saya menyadari bahwa memahami infrastruktur saja tidak cukup, saya juga ingin menciptakan sistem yang berjalan di atasnya.</p>
+            <p>Hal ini mendorong saya untuk mulai mempelajari alur pengembangan perangkat lunak, salah satunya melalui pembuatan program pengelola barang sederhana menggunakan Golang. Saat ini, saya sedang mempelajari perancangan website (UI/UX) dan aktif menulis di blog mahasiswa.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>1. Networking & Infrastructure</h3>
+            <ul class="list-style">
+                <li>MikroTik (EoIP Tunnel, Konfigurasi Dasar)</li>
+                <li>Monitoring Jaringan</li>
+                <li>Instalasi Kabel LAN</li>
+            </ul>
+            <h3>2. Software Development</h3>
+            <ul class="list-style">
+                <li>Bahasa Pemrograman: Go (Golang)</li>
+                <li>Perancangan Website (UI/UX)</li>
+            </ul>
+            <img src="assets/images/proyek-golang.png" alt="Proyek Golang" style="width: 100%; max-width: 400px; border-radius: 8px; margin-top: 15px;">
+            <h3>3. Additional Skills</h3>
+            <ul class="list-style">
+                <li>Microsoft Office</li>
+                <li>Technical Writing</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <h3>PT Carano Integrasi Teknologi</h3>
+            <p><strong>Network Technician Intern</strong> | Okt 2024 - Mar 2025</p>
+            <ul class="list-style">
+                <li><strong>Konfigurasi MikroTik:</strong> Membuat Hotspot hingga implementasi EoIP Tunnel.</li>
+                <li><strong>Maintenance & Monitoring:</strong> Pemantauan stabilitas jaringan klien secara rutin.</li>
+                <li><strong>Instalasi Infrastruktur:</strong> Pengecekan kabel LAN (UTP).</li>
+                <li><strong>Troubleshooting:</strong> Memperbaiki masalah teknis pada jaringan fisik dan perangkat.</li>
+            </ul>
+            <div class="img-grid">
+                <img src="assets/images/pkl-lan.jpg" alt="Instalasi LAN">
+                <img src="assets/images/mikrotik-config.jpg" alt="Konfigurasi MikroTik">
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            
+            <div class="cert-item">
+                <strong>1. Sertifikasi Kompetensi BNSP</strong>
+                <img src="assets/certificates/thumb-bnsp.png" alt="BNSP" class="cert-preview">
+                <a href="assets/certificates/sertifikat-bnsp.pdf" target="_blank" class="btn-pdf">Lihat Sertifikat PDF</a>
+            </div>
+
+            <div class="cert-item">
+                <strong>2. Sertifikat Workshop</strong>
+                <img src="assets/certificates/thumb-workshop.png" alt="Workshop" class="cert-preview">
+                <a href="assets/certificates/sertifikat-workshop.pdf" target="_blank" class="btn-pdf">Lihat Sertifikat PDF</a>
+            </div>
+
+            <div class="cert-item">
+                <strong>3. Sertifikat Magang</strong>
+                <img src="assets/certificates/thumb-PKL.png" alt="Sertifikat Magang" class="cert-preview">
+                <a href="assets/certificates/sertifikat-PKL.pdf" target="_blank" class="btn-pdf">Lihat Sertifikat PDF</a>
+            </div>
+        </section>
+
+        <section id="goals">
+            <h2>Goals</h2>
+            <p style="font-style: italic; text-align: center; font-size: 18px; color: #555;">
+                "Visi saya adalah menjadi seorang developer yang mampu mengintegrasikan infrastruktur jaringan dengan kebaruan perangkat lunak. Saya berkomitmen untuk terus mengeksplorasi berbagai teknologi baru guna menciptakan solusi digital yang efisien, fungsional, dan dapat memberikan manfaat nyata bagi banyak orang."
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Amar Gaurov - Portofolio Digital</p>
+    </footer>
+
+</body>
+</html>
